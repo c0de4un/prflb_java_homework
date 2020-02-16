@@ -96,6 +96,15 @@ public final class TooLongTextAnalyzer extends KeywordAnalyzer
 	//===========================================================
 	
 	@Override
+	protected boolean OnAnalysisStart( String pText )
+	{
+		if ( pText.length() > mLengthLimit )
+			mLabel = ELabel.TOO_LONG;
+		
+		return false;
+	}
+	
+	@Override
 	protected ELabel OnKeywordMatch( final String pKeyword, final String pText )
 	{ return ELabel.OK; }
 	
