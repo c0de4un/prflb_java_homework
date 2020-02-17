@@ -61,7 +61,7 @@ public interface ITextAnalyzer
 	 * @throws - can throw exception:
 	 *   - NullPointerException - if text is empty.
 	**/
-	public ELabel processText( String pText ) throws NullPointerException;
+	public ELabel processText( String pText );
 	
 	//-----------------------------------------------------------
 	

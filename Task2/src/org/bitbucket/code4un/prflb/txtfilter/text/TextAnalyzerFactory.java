@@ -76,7 +76,7 @@ public final class TextAnalyzerFactory implements ITextAnalyzeFactory
 	//===========================================================
 	
 	@Override
-	public ITextAnalyzer BuildAnalyzer( final EAnalyzers pType, String[] pKeywords ) throws Exception
+	public ITextAnalyzer BuildAnalyzer( final EAnalyzers pType, String[] pKeywords )
 	{
 		switch( pType )
 		{

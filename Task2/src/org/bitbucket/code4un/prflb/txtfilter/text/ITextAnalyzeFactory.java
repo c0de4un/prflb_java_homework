@@ -54,7 +54,7 @@ public interface ITextAnalyzeFactory
 	 * @return - ITextAnalyzer implementation.
 	 * @throws - can throw out of memory.
 	**/
-	public ITextAnalyzer BuildAnalyzer( final EAnalyzers pType, String[] pKeywords ) throws Exception;
+	public ITextAnalyzer BuildAnalyzer( final EAnalyzers pType, String[] pKeywords );
 	
 	//-----------------------------------------------------------
 	

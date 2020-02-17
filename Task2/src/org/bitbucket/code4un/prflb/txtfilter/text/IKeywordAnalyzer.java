@@ -76,7 +76,7 @@ public interface IKeywordAnalyzer
 	 * @param pOutput - Output container. Strings appended.
 	 * @throws - can throw {@link NullPointerException} if the output is null.
 	**/
-	public void getKeywords( ArrayList<String> pOutput ) throws NullPointerException;
+	public void getKeywords( ArrayList<String> pOutput );
 	
 	//===========================================================
 	// METHODS

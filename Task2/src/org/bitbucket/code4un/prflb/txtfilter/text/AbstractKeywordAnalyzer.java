@@ -95,7 +95,7 @@ abstract class AbstractKeywordAnalyzer extends TextAnalyzer implements IKeywordA
 	{ return mKeywords != null ? (String[]) mKeywords.toArray( ) : null; }
 	
 	@Override
-	public void getKeywords( ArrayList<String> pOutput ) throws NullPointerException
+	public void getKeywords( ArrayList<String> pOutput )
 	{
 		// Null-Check
 		if ( pOutput == null )
@@ -126,7 +126,7 @@ abstract class AbstractKeywordAnalyzer extends TextAnalyzer implements IKeywordA
 	//===========================================================
 	
 	@Override
-	public final ELabel processText( String pText ) throws NullPointerException
+	public final ELabel processText( String pText )
 	{
 		
 		// Notify derived object.
@@ -217,7 +217,7 @@ abstract class AbstractKeywordAnalyzer extends TextAnalyzer implements IKeywordA
 	 * @throws - can throw:
 	 *   - {@link NullPointerException} if instance is null;
 	**/
-	protected static ArrayList<String> allocateKeywordsList( AbstractKeywordAnalyzer pInstance ) throws NullPointerException
+	protected static ArrayList<String> allocateKeywordsList( AbstractKeywordAnalyzer pInstance )
 	{
 		// Null-check.
 		if ( pInstance == null )

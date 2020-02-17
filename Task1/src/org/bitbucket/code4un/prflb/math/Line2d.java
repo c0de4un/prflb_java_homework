@@ -64,7 +64,7 @@ public final class Line2d implements IShape
 	 * @throws - can throw exception:
 	 *   - {@link BadLogicException} - thrown if bad arguments provided.
 	**/
-	public Line2d( final Point2d pStart, final Point2d pFinish, final boolean allowZeroDenominator ) throws NullPointerException, BadLogicException
+	public Line2d( final Point2d pStart, final Point2d pFinish, final boolean allowZeroDenominator ) throws BadLogicException
 	{
 		// Null-checks.
 		if ( pStart == null || pFinish == null )
@@ -139,7 +139,7 @@ public final class Line2d implements IShape
 	 * @throws - can throw exception:
 	 *   - {@link BadLogicException} - if some arguments are invalid;
 	**/
-	static boolean IsEqual( final Line2d pSrc, final Line2d pDst ) throws NullPointerException
+	static boolean IsEqual( final Line2d pSrc, final Line2d pDst )
 	{
 		// Null-checks.
 		if ( pSrc == null || pDst == null )
